@@ -1,82 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>ISR Maths Curriculum</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f5f5f5;
-  }
-
-  nav {
-    background: #003366;
-    padding: 10px 20px;
-  }
-
-  nav a {
-    color: white;
-    margin-right: 20px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  nav a:hover {
-    text-decoration: underline;
-  }
-
-  .container {
-    max-width: 900px;
-    margin: 40px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-  }
-
-  h1 {
-    color: #003366;
-  }
-
-  .grade-links a {
-    display: block;
-    padding: 10px;
-    margin: 8px 0;
-    background: #e8f0ff;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #003366;
-    font-weight: bold;
-  }
-
-  .grade-links a:hover {
-    background: #d0e0ff;
-  }
-</style>
+  <meta charset="UTF-8">
+  <title>Summer School 2026 — Maths Curriculum</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #fafafa;
+    }
+  </style>
 </head>
 
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="students.html">Student Page</a>
-  <a href="grades1and2.html">Grades 1–2</a>
-  <a href="grades3and4.html">Grades 3–4</a>
-  <a href="grades5and8.html">Grades 5–8</a>
-</nav>
+  <!-- HEADER BANNER -->
+  <div style="width: 100%; 
+              background: linear-gradient(90deg, #FFD966, #F4B183);
+              padding: 30px 10px; 
+              text-align: center; 
+              border-radius: 10px;
+              margin-bottom: 30px;
+              box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
 
-<div class="container">
-  <h1>ISR Maths Curriculum</h1>
-  <p>Welcome! Choose a grade level below to view the full Scheme of Work.</p>
+    <h1 style="font-size: 42px; margin: 0; color: #333;">
+      Summer School 2026
+    </h1>
 
-  <div class="grade-links">
-    <a href="grades1and2.html">Grades 1–2 — Maths SOW</a>
-    <a href="grades3and4.html">Grades 3–4 — Maths SOW</a>
-    <a href="grades5and8.html">Grades 5–8 — Maths SOW</a>
+    <h2 style="font-size: 26px; margin: 10px 0 0 0; color: #444;">
+      Maths Curriculum — Weeks 1–4
+    </h2>
+
   </div>
-</div>
+
+  <!-- HOMEPAGE QR CODE -->
+  <div style="text-align:center; margin-bottom: 35px;">
+    <img 
+      src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://mr-ellis.github.io/summer-school-2026/" 
+      alt="Homepage QR Code">
+    <p style="font-size: 16px; color: #555;">Scan to open this homepage</p>
+  </div>
+
+  <!-- BUTTON MENU -->
+  <div style="display: flex; flex-direction: column; gap: 15px; max-width: 450px; margin: auto;">
+
+    <a href="grades1-2.html" 
+       style="background: #FFE599; padding: 15px; text-align: center; 
+              border-radius: 10px; font-size: 20px; text-decoration: none; 
+              color: #333; font-weight: bold;">
+      🟡 Grades 1–2 — Maths SOW (Weeks 1–4)
+    </a>
+
+    <a href="grades3-4.html" 
+       style="background: #CFE2F3; padding: 15px; text-align: center; 
+              border-radius: 10px; font-size: 20px; text-decoration: none; 
+              color: #333; font-weight: bold;">
+      🔵 Grades 3–4 — Maths SOW (Weeks 1–4)
+    </a>
+
+    <a href="grades5-8.html" 
+       style="background: #D9EAD3; padding: 15px; text-align: center; 
+              border-radius: 10px; font-size: 20px; text-decoration: none; 
+              color: #333; font-weight: bold;">
+      🟢 Grades 5–8 — Maths SOW (Weeks 1–4)
+    </a>
+
+  </div>
 
 </body>
 </html>
