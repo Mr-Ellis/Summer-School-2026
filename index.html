@@ -2,77 +2,95 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Summer School 2026 — Maths Curriculum</title>
+  <title>Summer School 2026 — Maths & Programming</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
-      background: #fafafa;
+      background: #f2f7ff;
+      color: #333;
     }
+
+    .banner {
+      width: 100%;
+      background: linear-gradient(90deg, #6fa8dc, #9fc5e8);
+      padding: 30px 10px;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .section-title {
+      font-size: 26px;
+      margin: 25px 0 10px;
+      font-weight: bold;
+      color: #2e75b6;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 450px;
+      margin: auto;
+    }
+
+    .btn {
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      display: block;
+    }
+
+    .math-btn { background: #ffe599; }
+    .math-btn2 { background: #cfe2f3; }
+    .math-btn3 { background: #d9ead3; }
+
+    .extra-btn { background: #ead1dc; }
+    .extra-btn2 { background: #d9d2e9; }
+
+    .programming-btn { background: #b6d7a8; }
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER BANNER -->
-  <div style="width: 100%; 
-              background: linear-gradient(90deg, #FFD966, #F4B183);
-              padding: 30px 10px; 
-              text-align: center; 
-              border-radius: 10px;
-              margin-bottom: 30px;
-              box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
-
-    <h1 style="font-size: 42px; margin: 0; color: #333;">
-      Summer School 2026
-    </h1>
-
-    <h2 style="font-size: 26px; margin: 10px 0 0 0; color: #444;">
-      Maths Curriculum — Weeks 1–4
-    </h2>
-
+  <div class="banner">
+    <h1 style="font-size: 42px; margin: 0;">Summer School 2026</h1>
+    <h2 style="font-size: 26px; margin: 10px 0 0;">Maths Curriculum & Programming</h2>
+    <p style="font-size: 18px; margin-top: 10px;">Fun learning for Grades 1–8</p>
   </div>
 
-  <!-- BUTTON MENU -->
-  <div style="display: flex; flex-direction: column; gap: 15px; max-width: 450px; margin: auto;">
+  <!-- MATHS SECTION -->
+  <div class="section-title">📐 Maths Curriculum</div>
 
-    <a href="grades1and2.html"
-       style="background: #FFE599; padding: 15px; text-align: center;
-              border-radius: 10px; font-size: 20px; text-decoration: none;
-              color: #333; font-weight: bold;">
-      🟡 Grades 1–2 — Maths SOW (Weeks 1–4)
-    </a>
+  <div class="menu">
+    <a href="grades1and2.html" class="btn math-btn">🟡 Grades 1–2</a>
+    <a href="grades3and4.html" class="btn math-btn2">🔵 Grades 3–4</a>
+    <a href="grades5and8.html" class="btn math-btn3">🟢 Grades 5–8</a>
+  </div>
 
-    <a href="grades3and4.html"
-       style="background: #CFE2F3; padding: 15px; text-align: center;
-              border-radius: 10px; font-size: 20px; text-decoration: none;
-              color: #333; font-weight: bold;">
-      🔵 Grades 3–4 — Maths SOW (Weeks 1–4)
-    </a>
+  <!-- PROGRAMMING SECTION -->
+  <div class="section-title">💻 Programming</div>
 
-    <a href="grades5and8.html"
-       style="background: #D9EAD3; padding: 15px; text-align: center;
-              border-radius: 10px; font-size: 20px; text-decoration: none;
-              color: #333; font-weight: bold;">
-      🟢 Grades 5–8 — Maths SOW (Weeks 1–4)
-    </a>
+  <div class="menu">
+    <a href="programming.html" class="btn programming-btn">🧑‍💻 Programming Lessons</a>
+  </div>
 
-    <a href="https://play.blooket.com/play"
-       style="background: #F4CCCC; padding: 15px; text-align: center;
-              border-radius: 10px; font-size: 20px; text-decoration: none;
-              color: #333; font-weight: bold;">
-      🎯 Blooket
-    </a>
+  <!-- EXTRAS -->
+  <div class="section-title">🎮 Extra Learning Tools</div>
 
-    <a href="https://anton.app/en_gb/"
-       style="background: #D9D2E9; padding: 15px; text-align: center;
-              border-radius: 10px; font-size: 20px; text-decoration: none;
-              color: #333; font-weight: bold;">
-      📚 Anton
-    </a>
-
+  <div class="menu">
+    <a href="https://play.blooket.com/play" class="btn extra-btn">🎯 Blooket</a>
+    <a href="https://anton.app/en_gb/" class="btn extra-btn2">📚 Anton</a>
   </div>
 
 </body>
 </html>
+
 
