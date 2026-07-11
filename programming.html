@@ -3,21 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <title>Programming — Summer School 2026</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #e8f4ff;
+      color: #333;
+    }
+
+    .banner {
+      width: 100%;
+      background: linear-gradient(90deg, #76a5af, #9fc5e8);
+      padding: 25px 10px;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .section-title {
+      font-size: 26px;
+      margin: 25px 0 10px;
+      font-weight: bold;
+      color: #2e75b6;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 450px;
+      margin: auto;
+    }
+
+    .btn {
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      display: block;
+    }
+
+    .castle-btn { background: #ffe599; }
+    .errors-btn { background: #f4cccc; }
+    .worldcup-btn { background: #cfe2f3; }
+    .turtle-btn { background: #d9ead3; }
+
+  </style>
 </head>
 
-  <body>
+<body>
 
-  <script>
+<!-- PASSWORD PROTECTION -->
+<script>
   const password = prompt("Enter password to access this page:");
-  if (password !== "code") {
+  if (password !== "play") {
     alert("Incorrect password.");
     window.location.href = "index.html";
   }
 </script>
 
+<!-- HEADER -->
+<div class="banner">
+  <h1 style="margin: 0; font-size: 40px;">💻 Programming Zone</h1>
+  <h2 style="margin-top: 10px; font-size: 24px;">Summer School 2026</h2>
+</div>
 
-<h1>Programming Lessons Coming Soon</h1>
-<p>This page will contain coding activities, games, and challenges.</p>
+<!-- PROGRAMMING LINKS -->
+<div class="section-title">🧑‍💻 Coding Challenges & Courses</div>
+
+<div class="menu">
+
+  <a href="https://eaglercraft.com/" 
+     class="btn castle-btn">
+     🏰 Build a Castle in Minecraft Competition
+  </a>
+
+  <a href="https://jamesabela.github.io/jsfun/top10_python_errors_course/index.html"
+     class="btn errors-btn">
+     🕵️ Python Error Detectives
+  </a>
+
+  <a href="https://jamesabela.github.io/jsfun/worldcup_manager/index.html"
+     class="btn worldcup-btn">
+     ⚽ World Cup Manager
+  </a>
+
+  <a href="https://jamesabela.github.io/jsfun/turtle_course/index.html"
+     class="btn turtle-btn">
+     🐢 Python Turtle Graphics Course
+  </a>
+
+</div>
 
 </body>
 </html>
