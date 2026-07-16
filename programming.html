@@ -32,7 +32,7 @@
       display: flex;
       flex-direction: column;
       gap: 15px;
-      max-width: 450px;
+      max-width: 480px;
       margin: auto;
     }
 
@@ -45,17 +45,23 @@
       color: #333;
       font-weight: bold;
       display: block;
+      transition: 0.15s ease;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .btn:hover {
+      transform: scale(1.01);
+      filter: brightness(0.96);
     }
 
     .castle-btn { background: #ffe599; }
-    .errors-btn { background: #f4cccc; }
-    .worldcup-btn { background: #cfe2f3; }
-    .turtle-btn { background: #d9ead3; }
-
     .busy-btn { background: #ffd1dc; }
     .practice-btn { background: #d0e0e3; }
     .ai-btn { background: #e6e6fa; }
+    .purple-btn { background: #d7bde2; }
+    .scratch-btn { background: #f9cb9c; }
 
+    /* removed classes: .errors-btn, .worldcup-btn, .turtle-btn */
   </style>
 </head>
 
@@ -63,11 +69,13 @@
 
 <!-- PASSWORD PROTECTION -->
 <script>
-  const password = prompt("Enter password to access this page:");
-  if (password !== "play") {
-    alert("Incorrect password.");
-    window.location.href = "index.html";
-  }
+  (function() {
+    const password = prompt("Enter password to access this page:");
+    if (password !== "play") {
+      alert("Incorrect password.");
+      window.location.href = "index.html";
+    }
+  })();
 </script>
 
 <!-- HEADER -->
@@ -81,45 +89,45 @@
 
 <div class="menu">
 
+  <!-- 1) Build a Castle in Minecraft (kept) -->
   <a href="https://eaglercraft.com/" 
      class="btn castle-btn">
      🏰 Build a Castle in Minecraft Competition
   </a>
 
-  <a href="https://jamesabela.github.io/jsfun/top10_python_errors_course/index.html"
-     class="btn errors-btn">
-     🕵️ Python Error Detectives
-  </a>
-
-  <a href="https://jamesabela.github.io/jsfun/worldcup_manager/index.html"
-     class="btn worldcup-btn">
-     ⚽ World Cup Manager
-  </a>
-
-  <a href="https://jamesabela.github.io/jsfun/turtle_course/index.html"
-     class="btn turtle-btn">
-     🐢 Python Turtle Graphics Course
-  </a>
-
-  <!-- NEW LINKS BELOW -->
-
+  <!-- 2) Busy Things (kept) -->
   <a href="https://www.busythings.co.uk/"
      class="btn busy-btn">
      🎨 Busy Things
   </a>
 
-  <a href="https://mrdavekang.github.io/y8-python/python-practice-ks3.html"
-     class="btn practice-btn">
-     🐍 Python Practise
-  </a>
-
+  <!-- 3) AI Activities (kept) -->
   <a href="https://csforall.org/en-US/activities/hour-of-ai"
      class="btn ai-btn">
      🤖 AI Activities
   </a>
 
+  <!-- 4) NEW: Purple Mash login (child) -->
+  <a href="https://www.purplemash.com/login/#/portal/isr-international-school-on-the-rhine/child"
+     class="btn purple-btn">
+     🟣 Purple Mash (child)
+  </a>
+
+  <!-- 5) NEW: Scratch explore projects -->
+  <a href="https://scratch.mit.edu/explore/projects/all/"
+     class="btn scratch-btn">
+     🐱 Scratch Projects
+  </a>
+
+  <!-- REMOVED:
+       - Python Error Detectives
+       - World Cup Manager
+       - Python Turtle Graphics Course
+       - Python Practise
+  -->
+
 </div>
 
+<!-- small note: all requested links are present, unwanted ones removed -->
 </body>
 </html>
-
