@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>STEM — Summer School 2026</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #e8f4ff;
+      color: #333;
+    }
+
+    .banner {
+      width: 100%;
+      background: linear-gradient(90deg, #76a5af, #9fc5e8);
+      padding: 25px 10px;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .section-title {
+      font-size: 26px;
+      margin: 25px 0 10px;
+      font-weight: bold;
+      color: #2e75b6;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 480px;
+      margin: auto;
+    }
+
+    .btn {
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      display: block;
+      transition: 0.15s ease;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .btn:hover {
+      transform: scale(1.01);
+      filter: brightness(0.96);
+    }
+
+    .pictoblox-btn { background: #d0e0e3; }
+    .quarky-btn { background: #e6e6fa; }
+  </style>
+</head>
+
+<body>
+
+<!-- PASSWORD PROTECTION -->
+<script>
+  (function() {
+    const password = prompt("Enter password to access this page:");
+    if (password !== "play") {
+      alert("Incorrect password.");
+      window.location.href = "index.html";
+    }
+  })();
+</script>
+
+<!-- HEADER -->
+<div class="banner">
+  <h1 style="margin: 0; font-size: 40px;">🔬 STEM Zone</h1>
+  <h2 style="margin-top: 10px; font-size: 24px;">Summer School 2026</h2>
+</div>
+
+<!-- STEM LINKS -->
+<div class="section-title">🧪 Robotics & STEM Activities</div>
+
+<div class="menu">
+
+  <!-- PictoBlox -->
+  <a href="https://pictoblox.ai/"
+     class="btn pictoblox-btn">
+     🤖 PictoBlox — Coding & AI for Kids
+  </a>
+
+  <!-- Quarky Robot -->
+  <a href="https://ai.thestempedia.com/docs/quarky/quarky-ultimate-kit-robot-configurations/quarky-pick-and-place-robot/"
+     class="btn quarky-btn">
+     🦾 Quarky Pick & Place Robot — STEMpedia
+  </a>
+
+</div>
+
+</body>
+</html>
 
